@@ -28,14 +28,14 @@
     const submitLogin =  () => {
         console.log('Trying to login with credentials below: ', credentials);
         
-        signIn(credentials, { redirect: false }).then(()=>{
+        signIn(credentials, { redirect: false })
+        .then(()=>{
             console.log('Successfully logged!');
             navigateTo('/home'); // Redireciona para a página home se o login der certo
         }) // Tenta logar
          .catch((error)=>{
-            console.log('Error trying to login: ', error)
+            console.log('Error trying to login: ', error);
         });
-        
     }
 
     /*
