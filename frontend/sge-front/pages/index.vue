@@ -111,14 +111,16 @@
             flex-direction: column;  
             color: var(--light-background-color);       
             img{
-                z-index: 1;             
+                z-index: 1;
+                position: relative;             
                 margin: 0px 0px 25px 0px;
                 align-items: center;
                 width: 65%;
                 height: 45%;
-            };
+            }
             h1{
                 z-index: 1;
+                position: relative;
             }
         }
 
