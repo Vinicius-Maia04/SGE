@@ -20,7 +20,7 @@
 
 <template>
     <div>
-        <h1>Olá Tela Home!</h1>
         <button @click="submitSignOut" class="customButton">SAIR</button>
+        <h1>Olá Tela Home!</h1>
     </div>
 </template>

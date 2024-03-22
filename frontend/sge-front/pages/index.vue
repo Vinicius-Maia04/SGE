@@ -111,7 +111,7 @@
             flex-direction: column;  
             color: var(--light-background-color);       
             img{
-                z-index: 1;
+                z-index: 2;
                 position: relative;             
                 margin: 0px 0px 25px 0px;
                 align-items: center;
@@ -119,6 +119,10 @@
                 height: 45%;
             }
             h1{
+                z-index: 2;
+                position: relative;
+            }
+            div{
                 z-index: 1;
                 position: relative;
             }
