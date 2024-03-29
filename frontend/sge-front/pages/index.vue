@@ -107,33 +107,26 @@
         .logo_panel{
             display: none;
             width: 50vw;
-            height: 100vh;   
+            height: 100vh;
             flex-direction: column;  
             color: var(--light-background-color);       
-            img{
-                z-index: 2;
-                position: relative;             
+            img{         
                 margin: 0px 0px 25px 0px;
                 align-items: center;
                 width: 65%;
                 height: 45%;
+                z-index: 2;
             }
             h1{
-                z-index: 2;
-                position: relative;
-            }
-            div{
-                z-index: 1;
-                position: relative;
+              z-index: 2;  
             }
         }
 
         .login_panel{
-            z-index: 1;
-            position: relative;
             width: 100vw;
             height: 100vh;  
             background-color: var(--light-background-color);
+            z-index: 2;
 
             .login_content{
                 flex-direction: column;

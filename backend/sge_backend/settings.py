@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'app'
 ]
 
+AUTH_USER_MODEL = 'main.CustomUser'
+
 CORS_ALLOW_ALL_ORIGINS = True
 
 MIDDLEWARE = [
