@@ -43,10 +43,10 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     #'rest_framework_simplejwt',
     'djoser',
-    'app'
+    'main'
 ]
 
-AUTH_USER_MODEL = 'main.CustomUser'
+# AUTH_USER_MODEL = 'main.CustomUser'
 
 CORS_ALLOW_ALL_ORIGINS = True
 
