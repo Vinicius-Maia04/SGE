@@ -5,6 +5,7 @@ from .manager import *
 
 #criando uma classe de usuário customizada para substituir a padrão com
 #atributos desejados:
+#
 class CustomUser(AbstractBaseUser,PermissionsMixin):
     email = models.EmailField("email address", unique=True)
     is_staff = models.BooleanField(default=False)
