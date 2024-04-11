@@ -6,9 +6,9 @@ class CustomManager(BaseUserManager):
     def create_user(self, email, password, registrationNumber=None, **extra_fields):
 
         if not email:
-            raise  ValueError("Invalid E-mail!")
+            raise  ValueError("Invalid e-mail!")
         if not password:
-            raise  ValueError("Invalid Password!")
+            raise  ValueError("Invalid password!")
         
         regNumber = registrationNumber
 
@@ -42,3 +42,5 @@ class CustomManager(BaseUserManager):
 
         user.save()
         return user
+            
+        
