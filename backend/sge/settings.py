@@ -37,7 +37,7 @@ ALLOWED_HOSTS = [
     production_server
 ]
 
-CSRT_TRUSTED_ORIGINS = [
+CSRF_TRUSTED_ORIGINS = [
     'http://localhost',
     '127.0.0.1',
     'https://' + production_server
