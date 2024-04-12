@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     '~/assets/style/global-project.scss',  //css global customizado para toda a aplicação
   ],
   auth: {
-    baseURL: 'http://localhost:8000', // Endereço do Backend
+    baseURL: process.env.BACKEND_URL, // Endereço do Backend
     provider: {
       type: 'local', // Web Token
       endpoints: {
