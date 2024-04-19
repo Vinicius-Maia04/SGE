@@ -31,17 +31,14 @@ DEBUG = True
 
 production_server = 'sge-production-98f2.up.railway.app'
 
-ALLOWED_HOSTS = [
-    'http://localhost',
-    '127.0.0.1',
-    production_server
-]
+ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = [
-    'http://localhost',
-    '127.0.0.1',
-    'https://' + production_server
-]
+
+# CSRF_TRUSTED_ORIGINS = [
+#     'http://localhost',
+#     'http://127.0.0.1',
+#     'https://' + production_server
+# ]
 
 
 # Application definition
@@ -66,7 +63,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -144,9 +141,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_DIRS = [BASE_DIR / 'static_file']
 
-STATIC_ROOT = BASE_DIR / 'static_file'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
